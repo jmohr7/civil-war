@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A24AACA1C90DB41004611E1 /* oregonfight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A24AAC91C90DB41004611E1 /* oregonfight.mp3 */; };
 		2AA012E81C77D121004F6E4D /* GameStartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA012E71C77D121004F6E4D /* GameStartScene.swift */; };
 		5960AA891C5DA78F006ED886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5960AA881C5DA78F006ED886 /* AppDelegate.swift */; };
 		5960AA8B1C5DA78F006ED886 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5960AA8A1C5DA78F006ED886 /* GameScene.sks */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A24AAC91C90DB41004611E1 /* oregonfight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oregonfight.mp3; sourceTree = "<group>"; };
 		2AA012E71C77D121004F6E4D /* GameStartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStartScene.swift; sourceTree = "<group>"; };
 		5960AA851C5DA78F006ED886 /* civil-war.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "civil-war.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5960AA881C5DA78F006ED886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				5960AA8C1C5DA78F006ED886 /* GameScene.swift */,
 				5960AABE1C605F20006ED886 /* GameOverScene.swift */,
 				5960AA8E1C5DA78F006ED886 /* GameViewController.swift */,
+				2A24AAC91C90DB41004611E1 /* oregonfight.mp3 */,
 				5960AA901C5DA78F006ED886 /* Main.storyboard */,
 				5960AA931C5DA78F006ED886 /* Assets.xcassets */,
 				5960AA951C5DA78F006ED886 /* LaunchScreen.storyboard */,
@@ -251,6 +254,7 @@
 				5960AA8B1C5DA78F006ED886 /* GameScene.sks in Resources */,
 				5960AA971C5DA78F006ED886 /* LaunchScreen.storyboard in Resources */,
 				5960AA941C5DA78F006ED886 /* Assets.xcassets in Resources */,
+				2A24AACA1C90DB41004611E1 /* oregonfight.mp3 in Resources */,
 				5960AA921C5DA78F006ED886 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

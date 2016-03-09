@@ -119,23 +119,23 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if !footballSpawned{
             if random()%100 >= 90 {
                 // Create beaver sprite
-                let football = SKSpriteNode(imageNamed: "Football")
+                let football🏈 = SKSpriteNode(imageNamed: "Football")
                 
                 // Determine random height to spawn the villain
-                let actualY = randomCGFloat(min: football.size.height/2, max: size.height - football.size.height/2)
-                let actualX = randomCGFloat(min: football.size.width/2, max: size.width * 0.4 - football.size.width/2)
+                let actualY = randomCGFloat(min: football🏈.size.height/2, max: size.height - football🏈.size.height/2)
+                let actualX = randomCGFloat(min: football🏈.size.width/2, max: size.width * 0.4 - football🏈.size.width/2)
                 // start beaver on far right at a random height
-                football.position = CGPoint(x: actualX, y: actualY)
+                football🏈.position = CGPoint(x: actualX, y: actualY)
                 
                 // Add the beaver to the scene
-                addChild(football)
+                addChild(football🏈)
                 
                 // Setup football physics
-                football.physicsBody = SKPhysicsBody(rectangleOfSize: football.size)
-                football.physicsBody?.dynamic = true
-                football.physicsBody?.categoryBitMask = PhysicsCategory.Football
-                football.physicsBody?.contactTestBitMask = PhysicsCategory.Duck
-                football.physicsBody?.collisionBitMask = PhysicsCategory.None
+                football🏈.physicsBody = SKPhysicsBody(rectangleOfSize: football🏈.size)
+                football🏈.physicsBody?.dynamic = true
+                football🏈.physicsBody?.categoryBitMask = PhysicsCategory.Football
+                football🏈.physicsBody?.contactTestBitMask = PhysicsCategory.Duck
+                football🏈.physicsBody?.collisionBitMask = PhysicsCategory.None
 
                 footballSpawned = true
             }
@@ -194,10 +194,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         football.removeFromParent()
     }
     func puddlesDidCollideWithGoalLine(){
-        puddlesHasFootball = false
-        footballSpawned = false
-        score = score + 6
-        puddles.texture = noBallSkin
+        if(puddlesHasFootball){
+            puddlesHasFootball = false
+            footballSpawned = false
+            score = score + 6
+            puddles.texture = noBallSkin
+            runAction(SKAction.playSoundFileNamed("oregonfight.mp3", waitForCompletion: false))
+        }
     }
     
     func didBeginContact(contact: SKPhysicsContact) {
