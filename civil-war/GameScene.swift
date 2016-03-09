@@ -199,6 +199,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             footballSpawned = false
             score = score + 6
             puddles.texture = noBallSkin
+            puddles.runAction(SKAction.moveTo(CGPoint(x: size.width * 0.1, y: size.height * 0.5), duration: 0.0))
             runAction(SKAction.playSoundFileNamed("oregonfight.mp3", waitForCompletion: false))
         }
     }
